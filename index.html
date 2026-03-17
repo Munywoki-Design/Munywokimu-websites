@@ -2,181 +2,203 @@
 <html>
 <head>
   <meta name="google-site-verification" content="IFA7oVotyLBabY7g4u7E8-YZSgCpnKiPqIlzoxdLm8M" />
-<title>MUNYWOKIMU Web Design</title>
-<style>
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added this line -->
+  <title>MUNYWOKIMU Web Design</title>
+  <style>
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
 
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f4f4f4;
-}
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
 
-/* Header */
-header {
-  background: #FFD700; /* gold */
-  color: #4B0082;      /* indigo */
-  text-align: center;
-  padding: 30px;
-}
-header h1 {
-  margin: 0;
-  color: blue;
-}
-header button {
-  margin-top: 15px;
-  background: blue;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-header button:hover {
-  background: darkblue;
-}
+    /* Header */
+    header {
+      background: #FFD700; /* gold */
+      color: #4B0082;      /* indigo */
+      text-align: center;
+      padding: 30px;
+    }
+    header h1 {
+      margin: 0;
+      color: blue;
+    }
+    header button {
+      margin-top: 15px;
+      background: blue;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    header button:hover {
+      background: darkblue;
+    }
 
-/* Navigation */
-nav {
-  background: #444;
-  text-align: center;
-  padding: 10px;
-}
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav a:hover {
-  color: yellow;
-}
+    /* Navigation */
+    nav {
+      background: #444;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: yellow;
+    }
 
-/* Sections */
-section {
-  padding: 30px;
-  max-width: 800px;
-  margin: auto;
-}
-h2 { color: violet; }
+    /* Sections */
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 { color: violet; }
 
-/* Cards */
-.card {
-  background: orange;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-}
+    /* Cards */
+    .card {
+      background: orange;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
 
-/* Buttons */
-button {
-  cursor: pointer;
-}
-button.whatsapp {
-  background: #25D366;
-  color: white;
-}
-button.whatsapp:hover {
-  background: #128C7E;
-}
+    /* Buttons */
+    button {
+      cursor: pointer;
+    }
+    button.whatsapp {
+      background: #25D366;
+      color: white;
+    }
+    button.whatsapp:hover {
+      background: #128C7E;
+    }
 
-/* Footer */
-footer {
-  text-align: center;
-  background: #222;
-  color: white;
-  padding: 15px;
-  margin-top: 30px;
-}
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
 
-/* Fixed WhatsApp button */
-#whatsapp-fixed {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-}
+    /* Fixed WhatsApp button */
+    #whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
 
-/* Responsive for mobile */
-@media screen and (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 5px 0;
-  }
-  header button {
-    width: 90%;
-  }
-  #whatsapp-fixed button {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-}
-</style>
+    /* Responsive for mobile */
+    @media screen and (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center; /* Centers nav items on small screens */
+      }
+      header {
+        padding: 20px;
+      }
+      header h1 {
+        font-size: 24px;
+      }
+      header p {
+        font-size: 14px;
+      }
+      header button {
+        width: 90%; /* Makes button width responsive */
+        padding: 15px 0;
+        font-size: 16px; /* Increases button text size */
+      }
+      section {
+        padding: 20px;
+        width: 90%;
+        margin: auto;
+      }
+      #whatsapp-fixed {
+        bottom: 10px; /* Adjust the WhatsApp button positioning for mobile */
+        right: 10px;
+      }
+      #whatsapp-fixed button {
+        font-size: 14px;
+        padding: 10px 15px;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-<h1>MUNYWOKIMU WEB DESIGN</h1>
-<p>Simple & Modern Websites for Businesses.</p>
-<a href="#contact">
-  <button>Get a Website</button>
-</a>
+  <h1>MUNYWOKIMU WEB DESIGN</h1>
+  <p>Simple & Modern Websites for Businesses.</p>
+  <a href="#contact">
+    <button>Get a Website</button>
+  </a>
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-<h2>About Me</h2>
-<div class="card">
-<p>I am a Bachelor of Science in Technology student who designs modern websites using HTML, CSS, and JavaScript.</p>
-</div>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a Bachelor of Science in Technology student who designs modern websites using HTML, CSS, and JavaScript.</p>
+  </div>
 </section>
 
 <section id="services">
-<h2>Services</h2>
-<div class="card">
-<p>✔ Business Websites</p>
-<p>✔ Portfolio Websites</p>
-<p>✔ Landing Pages</p>
-</div>
+  <h2>Services</h2>
+  <div class="card">
+    <p>✔ Business Websites</p>
+    <p>✔ Portfolio Websites</p>
+    <p>✔ Landing Pages</p>
+  </div>
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
-<div class="card">
-<p>Email: munywokimuthui127@gmail.com</p>
-<p>WhatsApp: +254713513424</p>
-<a href="https://wa.me/254713513424?text=Hello%20MUNYWOKIMU,%20kindly%20make%20me%20a%20simple%20website%20that%20contains%20this%20user%20case%20details,%20also%20tell%20me%20of%20the%20total%20project%20costs%20for%20the%20whole%20design%20and%20delivery!" target="_blank">
-  <button class="whatsapp">Chat on WhatsApp</button>
-</a>
-</div>
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: munywokimuthui127@gmail.com</p>
+    <p>WhatsApp: +254713513424</p>
+    <a href="https://wa.me/254713513424?text=Hello%20MUNYWOKIMU,%20kindly%20make%20me%20a%20simple%20website%20that%20contains%20this%20user%20case%20details,%20also%20tell%20me%20of%20the%20total%20project%20costs%20for%20the%20whole%20design%20and%20delivery!" target="_blank">
+      <button class="whatsapp">Chat on WhatsApp</button>
+    </a>
+  </div>
 </section>
 
 <footer>
-<p>© 2026 Munywoki Web Design</p>
+  <p>© 2026 Munywoki Web Design</p>
 </footer>
 
 <!-- Fixed WhatsApp button -->
 <div id="whatsapp-fixed">
-<a href="https://wa.me/254713513424?text=Hello%20MUNYWOKIMU,%20kindly%20make%20me%20a%20simple%20website%20that%20contains%20this%20user%20case%20details,%20also%20tell%20me%20of%20the%20problem%20costs%20for%20the%20whole%20design%20and%20delivery!" target="_blank">
-  <button class="whatsapp">Chat on WhatsApp</button>
-</a>
+  <a href="https://wa.me/254713513424?text=Hello%20MUNYWOKIMU,%20kindly%20make%20me%20a%20simple%20website%20that%20contains%20this%20user%20case%20details,%20also%20tell%20me%20of%20the%20total%20project%20costs%20for%20the%20whole%20design%20and%20delivery!" target="_blank">
+    <button class="whatsapp">Chat on WhatsApp</button>
+  </a>
 </div>
 
 </body>
-</html>
+                            </html>
